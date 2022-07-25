@@ -33,7 +33,7 @@ const App = () => {
         topViewStyle={styles.topContainer}
         bottomViewStyle={styles.bottomContainer}
         bottomContent={
-          <ScrollView contentContainerStyle={{}}>
+          <ScrollView contentContainerStyle={styles.codeConatiner}>
             <Text style={styles.buttonText}>Scanned Code:</Text>
             <Text style={styles.buttonText}>{scannedCodes}</Text>
           </ScrollView>
@@ -53,6 +53,10 @@ const styles = StyleSheet.create({
   bottomContainer: {
     flex: 1,
     padding: 20,
+  },
+  codeConatiner: {
+    flex: 1,
+    marginTop: 50,
   },
   centerText: {
     flex: 1,
